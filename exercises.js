@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 //Do not change any of the function names
 
@@ -7,6 +7,13 @@ function makeCat(name, age) {
     //add an age property to the object with the value set to the age argument
     //add a method called meow that returns the string 'Meow!'
     //return the object
+    return {
+        name: name,
+        age: age,
+        meow: function() {
+            return 'Meow!';
+        }
+    };
 }
 
 function addProperty(object, property) {
