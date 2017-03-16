@@ -11,7 +11,7 @@
 	* dot notation vs bracket notation
 
 
-2. Fork and clone this repo.  When you need to commit use the following commands.
+2. Fork and clone this repo.  When you need to commit, use the following commands.
 		
 	* git status
 	* git add --all
