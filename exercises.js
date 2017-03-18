@@ -126,6 +126,9 @@ function addCalculateDiscountPriceMethod(storeItem) {
   //price -> 20
   //discountPercentage -> .2
   //discountPrice = 20 - (20 * .2)
+    
+    // return storeItem
+    
     storeItem.calculateDiscountPrice = function() {
        return storeItem.price - (storeItem.price * storeItem.discountPercentage);
     };
