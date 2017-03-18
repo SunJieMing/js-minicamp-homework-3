@@ -25,13 +25,14 @@ function addProperty(object, property) {
 }
 
 function invokeMethod(object, method) {
+  object[method]();
   //method is a string that contains the name of a method on the object
   //invoke this method
   //nothing needs to be returned
 }
 
 function multiplyMysteryNumberByFive(mysteryNumberObject) {
-
+  return mysteryNumberObject.mysteryNumber*5;
   //mysteryNumberObject has a property called mysteryNumber
   //multiply the mysteryNumber property by 5 and return the product
 }
@@ -54,11 +55,10 @@ function newUser(name, email, password) {
 }
 
 function hasEmail(user) {
-for (var x in user){
-  if (x ==='email'){
+  if (user.email){
   return true;
 } else return false;
-}
+
   //return true if the user has a value for the property 'email'
   //otherwise return false
 }
@@ -97,12 +97,8 @@ function addFriend(user, newFriend) {
 }
 
 function setUsersToPremium(users) {
-
-    for (var e in users){
-      if (e === 'isPremium'){
-        e = true;
-      }
-    }
+for (var i = 0; i < users.length; i++)
+      users[i].isPremium = true;
 
   return users;
   //users is an array of user objects.
@@ -120,11 +116,9 @@ function sumUserPostLikes(user) {
 }
 
 function addCalculateDiscountPriceMethod(storeItem) {
-  calculateDiscountPrice = function(){
-    var price;
-    var discountPercentage;
-    var discount = price * discountPercentage;
-    return price - discount;
+  storeItem.this.calculateDiscountPrice = function(){
+    var discount = this.price * this.discountPercentage;
+    return this.price - discount;
   };
   //add a method to the storeItem object called 'calculateDiscountPrice'
   //this method should multiply the storeItem's 'price' and 'discountPercentage' to get the discount
