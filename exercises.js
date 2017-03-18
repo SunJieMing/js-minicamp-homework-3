@@ -58,7 +58,6 @@ function hasEmail(user) {
   if (user.email){
   return true;
 } else return false;
-
   //return true if the user has a value for the property 'email'
   //otherwise return false
 }
@@ -99,7 +98,6 @@ function addFriend(user, newFriend) {
 function setUsersToPremium(users) {
 for (var i = 0; i < users.length; i++)
       users[i].isPremium = true;
-
   return users;
   //users is an array of user objects.
   //each user object has the property 'isPremium'
@@ -108,6 +106,12 @@ for (var i = 0; i < users.length; i++)
 }
 
 function sumUserPostLikes(user) {
+  var postLikeSum = 0;
+
+  user.posts.forEach(function(post){
+    postLikeSum += post.likes;
+  });
+  return postLikeSum;
   //user has an array property called 'posts'
   //posts is an array of post objects
   //each post object has an integer property called 'likes'
@@ -116,10 +120,10 @@ function sumUserPostLikes(user) {
 }
 
 function addCalculateDiscountPriceMethod(storeItem) {
-  storeItem.this.calculateDiscountPrice = function(){
-    var discount = this.price * this.discountPercentage;
-    return this.price - discount;
-  };
+  storeItem.calculateDiscountPrice = function(){
+    var discountPrice = this.price - (this.price * this.discountPercentage);
+      return discountPrice;
+};
   //add a method to the storeItem object called 'calculateDiscountPrice'
   //this method should multiply the storeItem's 'price' and 'discountPercentage' to get the discount
   //the method then subtracts the discount from the price and returns the discounted price
@@ -127,6 +131,7 @@ function addCalculateDiscountPriceMethod(storeItem) {
   //price -> 20
   //discountPercentage -> .2
   //discountPrice = 20 - (20 * .2)
+return storeItem;
 }
 
 //Do not modify code below this line.
