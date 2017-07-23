@@ -1,0 +1,33 @@
+Objects: Objects are a way to hold and categorize information. They are a way
+to collect properties. Each property can either be an association between a key
+and a value, or a method.
+
+----------------------------------------------------------
+
+Properties: A property is a way to describe something. For example, if you have a
+"car" object, you may want to have a property that describes the car's color or how
+many doors it has. Also, you may have another property that describes something the
+car does. For example, you could have a function that describes the sequence of events
+as the car is started (car.pressBrake(), car.turnKey(), car.startEngine()). 
+
+----------------------------------------------------------
+
+Methods: A method is an action (or a collection of actions) grouped under a single function
+to complete a task. For example, you could have a method called sum() that takes two parameters and
+adds them.
+
+----------------------------------------------------------
+
+for in loop: A for in loop is a way to iterate over values and perform an action. You could
+iterate over array values and add five to each odd number, or iterate over each property in
+an object. It is a very versatile way to efficiently perform a large action set without
+using verbose language.
+
+
+----------------------------------------------------------
+
+dot notation vs bracket notation: In some cases, dot notation and bracket notation are
+equivalent, such as using console.log vs console[log]. When a variable is unknown, such as
+on a webpage where a user interacts by entering variables into the field linked to a method,
+it is often better to use bracket notation because it will consider the value, as opposed to
+the literal string entered.
