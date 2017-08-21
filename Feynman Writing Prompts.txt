@@ -20,5 +20,6 @@
 
     Dot notation vs bracket notation
 	
-	Bracket notation and dot notation are two different ways to access the properties of an object. Bracket 	notation is needed when properties of an object do not have a valid variable name. If
+	Bracket notation and dot notation are two different ways to access the properties of an object. Bracket
+	notation is needed when properties of an object do not have a valid variable name. If
 	the variable name is good, then you can use dot notation.
