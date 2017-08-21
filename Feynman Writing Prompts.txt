@@ -1,0 +1,25 @@
+
+    Objects
+
+	Objects encapsulate data and functions together. They can contain many data members and also function members.
+	You access each function and data member by their name.
+
+    Properties
+
+	The properties of an object are the data that an object encapsulates. They are the objects variables.
+	
+    Methods
+
+	The methods of an object are the functions that an object encapsulates. They are the object's member
+	functions.
+
+    for in loop
+
+	The for in loop is like iterating over all the properties of an object. You can execute some piece of code
+	for each property of an object.
+
+    Dot notation vs bracket notation
+	
+	Bracket notation and dot notation are two different ways to access the properties of an object. Bracket
+	notation is needed when properties of an object do not have a valid variable name. If
+	the variable name is good, then you can use dot notation.
