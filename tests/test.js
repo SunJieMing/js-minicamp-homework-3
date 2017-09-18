@@ -192,6 +192,7 @@ describe('sumUserPostLikes(user)', function() {
       ]
     };
     expect(exercises.sumUserPostLikes(user)).toBe(286);
+    
   });
 });
 
