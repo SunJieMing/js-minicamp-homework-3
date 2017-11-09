@@ -134,6 +134,7 @@ function addCalculateDiscountPriceMethod(storeItem) {
     var discountPrice = storeItem.price - discount;
     return discountPrice;
   };
+  return storeItem;
 }
 
 // Do not modify code below this line.
