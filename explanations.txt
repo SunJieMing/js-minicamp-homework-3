@@ -1,0 +1,9 @@
+1. In Javascript an object is a collection of properties. An object allows code to mimic the qualities of things in the world. A variable only has one value at a time. An object can have many properties at once, just as things in the real world do. A car, for instance, has a color, length, age, year/make/model, identification number, etc.
+
+2. A property is an association between a name (a key) and a value.
+
+3. A method is an object property whose value is a function. Methods are especially useful for adding, modifying, or retrieving object data.
+
+4. A for in loop in JS iterates over the enumerable properties of an object, either those specifically defined for the object, or those enumerable ones inherited from object prototypes. It can be used to iterate over an array (as indexes are just names of array properties), in cases when the output order doesn't matter.
+
+5. Dot notation uses a period to separate the reference to an object from the reference to its property: `let sound = obj.cat;`. Bracket notation uses brackets to do the same thing: `let sound = obj['cat'];`.
