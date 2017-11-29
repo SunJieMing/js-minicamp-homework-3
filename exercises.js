@@ -11,7 +11,6 @@ function makeCat(name, age) {
     meow: function(){return 'Meow!';}
   };
   return cat;
-
 }
 
 function addProperty(object, property) {
@@ -117,7 +116,6 @@ function sumUserPostLikes(user) {
     likes += user.posts[i].likes;
   }
   return likes;
-
 }
 
 function addCalculateDiscountPriceMethod(storeItem) {
